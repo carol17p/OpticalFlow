@@ -60,7 +60,7 @@ for filename in glob.glob(args["input"]+ "\*.mp4"):
         #frame = cv2.resize(frame, None, fx=scale, fy=scale)
     
         dense_flow = cv2.addWeighted(frame, 1,rgb, 1, 0)
-        cv2.imshow("Dense optical flow", dense_flow)
+        # cv2.imshow("Dense optical flow", dense_flow)
         out.write(dense_flow)
         
         prev_gray = gray
