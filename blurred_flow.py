@@ -31,7 +31,7 @@ for filename in glob.glob(args["input"]+ "\*.mp4"):
     # Sets image saturation to maximum
     mask[..., 1] = 255
     fourcc = cv2.VideoWriter_fourcc(*'X264')
-    name = args["output"] + "\\result_%d.mp4"%d
+    name = args["output"] + "\\result_blur_%d.mp4"%d
     out = cv2.VideoWriter(name,fourcc,20,(first_frame.shape[1], first_frame.shape[0]))
     d+=1
     
