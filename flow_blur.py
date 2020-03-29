@@ -22,7 +22,6 @@ for filename in glob.glob(args["input"]+ "\*.mp4"):
     vc = cv2.VideoCapture(filename)
 
     ret, first_frame = vc.read()
-    print(ret)
     first_frame = cv2.resize(first_frame, (800, 600), interpolation = cv2.INTER_AREA)
     # prev_gray = cv2.GaussianBlur(first_frame, (11, 11), 0)
     prev_gray = cv2.cvtColor(first_frame, cv2.COLOR_BGR2GRAY)
