@@ -5,5 +5,5 @@ The file blurred_flow.py also uses a GaussianBlur in an attempt to reduce noise 
 
 A folder to store the resulting output video files should be created.
 
-## Usage :
-python flow.py --input [path to input video files] --output [path to output video files]
+## Usage:
+$ python flow.py --input [path to input video files] --output [path to output video files]
