@@ -25,8 +25,6 @@ for filename in glob.glob(args["input"]+ "\*.mp4"):
     print(ret)
     first_frame = cv2.resize(first_frame, (800, 600), interpolation = cv2.INTER_AREA)
     prev_gray = cv2.GaussianBlur(first_frame, (11, 11), 0)
-    cv2.imshow('img', prev_gray)
-    cv2.waitKey(0)
     prev_gray = cv2.cvtColor(first_frame, cv2.COLOR_BGR2GRAY)
 
     mask = np.zeros_like(first_frame)
